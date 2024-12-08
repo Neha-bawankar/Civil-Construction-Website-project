@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NarayanaInfraConstruction</title>
+
+  <!--FONT AWASOME CDN file link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+  <!--custom css file link-->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/responsive-style.css" />
+
+  <!--========--bootstrap5  file link========-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!---------------header-------- -->
+  <header id="navbar">
+    <nav>
+      <div class="logo">
+        <h1>NIC</h1>
+      </div>
+      <ul id="click">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <li><a  class="nav_link" href="/index.html">Home</a></li>
+        <li><a class="nav_link" href="#service">Service</a></li>
+        <li><a class="nav_link" href="#about">About</a></li>
+        <li><a  class="nav_link" href="/project.html">Project</a></li>
+        <li><a class="nav_link" href="/contact-us.html">contact us</a></li>
+      </ul>
+      <button class="btn" id="button" onclick="OpenMenu()">
+        Request For Quote
+      </button>
+      <img src="assest/bar.png" alt="" onclick="showMenu()" />
+    </nav>
+  </header>
+  <main>
+    <!---------banner image set and their headline-->
+    <section class="Hero" id="blur">
+      <div class="hero-text">
+        <h1>
+          Build Your <span>"Dream Home"</span> With Beautiful
+          <br />Architecture That Fit Your <span>Budget</span>.
+        </h1>
+        <p>
+          Experience Unmatched quality and timely delivery with NIC Architect
+          & Consultant.
+        </p>
+      </div>
+
+      <!------social media icons to connect to the website -->
+      <div class="icons">
+        <a href="https://www.instagram.com/narayanainfraconstruction/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/9630655962"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/company/narayanainfraconstruction/"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </section>
+
+
+    <!-- Request Form (Initially Hidden) -->
+    <div class="popup" id="popup" >
+      <div class="popup-content">
+        <i class="fa-regular fa-circle-xmark" onclick="closeMenu()"></i>
+        <form action="#">
+          
+          <h3>Get In Touch</h3>
+          <input type="text" id="name"  placeholder="Your Name" required />
+          <input type="email" id="email"   placeholder="Email Id" required />
+          <input type="text" id="phone"   placeholder="Phone" required />
+          <input type="text" id="city"  placeholder="Your City" required />
+          <textarea class="text-area" id="message" rows="4"  placeholder="How Can we help you?"></textarea>
+          <button value="button" type="submit" onclick="Send()" >Send</button>
+        </form>
+      </div>
+    </div>
+    <!---------Service section  for the construction website-->
+    <section id="service">
+    
+      <h1>Our Services</h1>
+      <div class="service-box">
+        <div class="services">
+          <img src="assest/image 1.jpg" alt="" />
+          <div class="details">
+            <h5>Building Construction​ & Vastu Planning</h5>
+            <p>
+              We ensure building construction aligns with Vastu principles,
+              enhancing comfort and functionality in residential and
+              commercial spaces for ultimate serenity.
+            </p>
+            <button  onclick="OpenMenu()">Request For Quote</button>
+          </div>
+        </div>
+        <div class="services">
+          <img src="assest/img 2.jpg" alt="" />
+          <div class="details">
+            <h5>Interior & Exterial Design​</h5>
+            <p>
+              Transforming spaces with expert interior and exterior design.
+              Elevate your home or business with style and functionality.
+            </p>
+            <button  id="button" onclick="OpenMenu()">Request For Quote</button>
+          </div>
+        </div>
+        <div class="services">
+          <img src="assest/image 3.jpg" alt="" />
+          <div class="details">
+            <h5>Land Development​ & Layout</h5>
+            <p>
+              Comprehensive land development and layout services, creating
+              sustainable, well-planned spaces tailored to your vision and
+              community need
+            </p>
+            <button   id="button" onclick="OpenMenu()">Request For Quote</button>
+          </div>
+        </div>
+        <div class="services">
+          <img src="assest/image 4.jpg" alt="" />
+          <div class="details">
+            <h5>Architectural Plan & 3D Modeling</h5>
+            <p>
+              Expert architectural plans and 3D modeling, bringing your vision
+              to life with precision, creativity, and realistic
+              visualizations.
+            </p>
+            <button   id="button" onclick="OpenMenu()">Request For Quote</button>
+          </div>
+        </div>
+        <div class="services">
+          <img src="assest/image 5.jpg" alt="" />
+          <div class="details">
+            <h5>Real State</h5>
+            <p>
+              Professional real estate services, guiding you through buying,
+              selling, and investing with market expertise and personalized
+              support.
+            </p>
+            <button  id="button" onclick="OpenMenu()">Request For Quote</button>
+          </div>
+        </div>
+        <div class="services">
+          <img src="assest/image 6.jpg" alt="" />
+          <div class="details">
+            <h5>Estimation & Project Management</h5>
+            <p>
+              Accurate estimation, detailed valuation, and efficient project
+              management services to ensure your project's success from start
+              to finish.
+            </p>
+            <button id="button" onclick="OpenMenu()">Request For Quote</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----service location ----->
+    <div class="location">
+      <h1>Service Location</h1>
+      <div class="location-slider">
+        <div class="slide1">
+        <ul>
+          PUNE
+        </ul>
+        <ul>
+          INDORE
+        </ul>
+        <ul>
+          BETUL
+        </ul>
+        <ul>
+          SAONER
+        </ul>
+        <ul>
+          NAGPUR
+        </ul>
+        <ul>
+          SAUSAR
+        </ul>
+        <ul>CHHINDWARA
+        </ul>
+        <ul>
+          KAMLESHWAR
+        </ul>
+        <ul>
+          PANDHURNA
+        </ul>
+      </div>
+      </div>
+    </div>
+
+    <!-----------About us Styling-->
+
+    <section id="about">
+      <h1>About Us</h1>
+      <div class="about-container">
+        <div class="about-content">
+          <div class="content">
+            <p>
+              At NIC Consultant, led by Er. Shubham Bawankar, we provide
+              budget-friendly architectural, engineering, and construction
+              contractor services. Our expertise includes building information
+              modeling, rendering, interior/exterior design, and site
+              execution. We also specialize in construction management, real
+              estate development, and town planning. Experience quality and
+              tailored solutions at affordable prices.
+            </p>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="assest/about1.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!------contact us form------>
+
+    <section id="connect">
+      <div class="Connect-container">
+        <div class="connect-content">
+          <h1>Connect With Us</h1>
+          <p>
+            Reach out on WhatsApp or give us a call for the best home design
+            experience.
+          </p>
+        </div>
+    
+        <div class="connect-data">
+          <!-- Call Button -->
+          
+          <a href="tel:09630655962">
+            <button class="reach">
+              <i class="fa-solid fa-phone"></i> Call Now
+            </button>
+          </a>
+    
+          <!-- WhatsApp Button -->
+          <a href="https://wa.me/9630655962">
+            <button class="reach">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </button>
+          </a>
+    
+          <!-- Location Button -->
+          <a href="https://www.google.com/maps?q=Beside+Sandar+Hotel+Mohgaon+Road+Sausar+Chhindwara+Madhya+Pradesh+-+480106" target="_blank">
+            <button class="reach">
+              <i class="fa-solid fa-location-dot"></i> Location
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+
+    <!----project section-->
+    <section id="project" class="project-section">
+      <h1>Our Projects</h1>
+      <div class="project-container">
+        <div class="project-image-slider">
+          <div class="project-image">
+            <figure>
+              <input type="radio" name="slide" id="img1" checked />
+              <input type="radio" name="slide" id="img2" />
+
+              <img src="assest/project 1.jpg" alt="img1" class="m1" />
+              <img src="assest/project 2.jpg" alt="img2" class="m2" />
+            </figure>
+          </div>
+          <div class="image-dot">
+            <label for="img1"></label>
+            <label for="img2"></label>
+          </div>
+        </div>
+        <div class="project-text">
+          <h5>project Features</h5>
+          <h3>Lets explore the Projects.</h3>
+          <p>
+            BIM’s importance in improving collaboration, cost management, and
+            sustainability in modern construction project.
+          </p>
+          <a href="/project.html" class="btn"> View More</a>
+        </div>
+      </div>
+    </section>
+
+    <!---contact us form design -->
+
+    <section id="contact-us">
+      <a href="/"></a>
+      <h1>Contact Us</h1>
+      <div class="contact-box">
+        <div class="mid-container">
+          <div class="contact-info">
+            <div class="box">
+              <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="texture">
+                <h4>Address-1</h4>
+                <p>
+                  B-302 Girme Height Salunke Vihar Wanowrie,
+                  Pune Maharashtra - 411040
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="texture">
+                <h4>Address -2</h4>
+                <p>
+                  Beside of Sandar Hotel
+                  Mohgaon Road,Sausar , Chhindwara Madhya Pradesh -
+                  480106
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="texture">
+                <h4>Phone</h4>
+                <p>+91- 9630655962 ,+91- 6262165652</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon">
+                <i class="fa-solid fa-envelope-circle-check"></i>
+              </div>
+              <div class="texture">
+                <h4>Email</h4>
+                <p>contact@narayanainfraconstrution.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form>
+              <h4>Send Message</h4>
+              <div class="input-box">
+                <input type="text" name="name" id="name" required="required" autocomplete="off" />
+                <span>Full Name</span>
+              </div>
+              <div class="input-box">
+                <input type="text" name="city" id="city" required="required" autocomplete="off" />
+                <span>City</span>
+              </div>
+              <div class="input-box">
+                <input type="tel" name="phone" id="phone" required="required" autocomplete="off" />
+                <span>Contact Number</span>
+              </div>
+              <div class="input-box">
+                <input type="email" name="email" id="email" required="required" autocomplete="off" />
+                <span>Email Address</span>
+              </div>
+              <div class="input-box">
+                <textarea class="Message" id="message" required="required" autocomplete="off"></textarea>
+                <span> Message Here.....</span>
+              </div>
+              <div class="Btn">
+                <button  value="button" type="submit" onclick="Send()" >Send</button>
+              </div>
+
+          </div>
+          </form>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+ 
+    <!-----footer for the website -->
+    <footer id="foot_content">
+      <h5>© 2024 NIC.com All Rights Reserved</h5>
+    </footer>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--custom js file link--->
+    <script src="js/index.js"></script>
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    
+
+
+    <!---jquery cdn-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!----Bootstrap 5 CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"></script>
+
+</body>
+
+</html>
